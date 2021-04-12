@@ -1,0 +1,11 @@
+const coins = (total, value, totalCoins) => {
+
+  if (total <= value) return totalCoins;
+
+  if(total >= value) {
+    total -= value;
+    totalCoins++;
+    coins(total--, value, totalCoins);
+  }
+
+}

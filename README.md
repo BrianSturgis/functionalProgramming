@@ -2,17 +2,11 @@
 <p align="center">Super Galactic Age Calculator</p>
 </div>
 <p align="center"> Authored by Brian Sturgis</p>
+<p align="center"> co-authored-by: David Couch </p>
+
 <p align="center">Updated on Feb 8th, v1.5 2021</p>
 
 ## Application Description
-This web application will take a person's age in years and do the following:
-
-- Returns their age in Mercury years and can display it in the dom.
-- Returns their age in Venus years and can display it in the dom..
-- Returns their age in Mars years and can display it in the dom..
-- Returns their age in Jupiter years and can display it in the dom..
-- Determines how many years a user has left to live on each planet… This function is built into the applications logic but must be displayed via the contents of the applications output.
-- If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy. This function is built into the applications logic but must be displayed via the contents of the applications output.
 
 ## USING THIS APPLICATION
 - This app uses node.js. If you do not already have node.js installed, visit https://nodejs.org/en/download/ and install.
@@ -32,12 +26,7 @@ If you would like to run the program through the server, you can type "npm run s
 - Dependencies are managed with npm.
 - Webpack is used to lint, bundle, and process code.
 
-## Stretch Goals
-- The output is formatted inside of a snarky paragraph and would rather it have the tone of a robot.  I was listening to Bill Burr the Comedian and his snarky personality heavily influenced the content choice.
-- A UI for the application that has css styling.
-- Will return the date of a user's next birthday on each planet.
-- Will return the age Keith Richards will be in dog years on the planet Jupiter in 2073.
-- It will assume that the average lifespan of a mayfly is 5 minutes, then determine how many mayfly lifespans a human user has lived and then compare it the current age (in Earth years) of our sun.
+
 
 ## Known Bugs
 none as of yet but don't fret as there will be.
@@ -63,55 +52,11 @@ code:calculatorObject();
 Expect:(calculatorObject).toEqual(inputtedAge,0,0);
 
 
-// create an array holding inputted age divided by each planets factor (loop)
-Test: " should calculate 0 years into Mercury years by returning an array of the number divided by Mercury years"
-code: alienAge();
-Expect:(AlienAge[0]).toEqual([0]);
-
-Test: "should calculate 0 years into Mercury years by returning an array of the number divided by Venus years"
-code: alienAge();
-Expect:(AlienAge[0]).toEqual([0]);
-
-Test: "should calculate 0 years into Mercury years by returning an array of the number divided by Mars years"
-code: alienAge();
-Expect:(AlienAge[0]).toEqual([0]);
-
-Test: "should calculate 0 years into Mercury years by returning an array of the number divided by Jupiter years"
-code: alienAge();
-Expect:(AlienAge[0]).toEqual([0]);
-
-
-// should divide overage of ageCheck into planets factor (loop)
-Test: "should calculate 0 years into years left to live in Mercury years"
-code: lifeExpectancy();
-Expect:().toEqual();
-
-Test: "should calculate 0 years into years left to live in Venus years"
-code: lifeExpectancy();
-Expect:().toEqual();
-
-Test: "should calculate 0 years into years left to live in Mars years"
-code: lifeExpectancy();
-Expect:().toEqual();
-
-Test: "should calculate 0 years into years left to live in Jupiter years"
-code: lifeExpectancy();
-Expect:().toEqual();
-
-
-// should check whether age is over under 73  (branch or switch)
-Test: "should determine whether inputtedAge is under 73"
-code: ageCheck();
-Expect:().toEqual();
-
-Test: "should determine whether inputtedAge is over 73"
-code: ageCheck();
-Expect:().toEqual();
 
 ```
 
 ## Support and contact details
-email Brian Sturgis @ <sturujisu@gmail.com>
+email Brian Sturgis @ <sturujisu@gmail.com> or David Couch <dcouch440@gmail.com>
 
 ## Technologies Used
 * HTML
