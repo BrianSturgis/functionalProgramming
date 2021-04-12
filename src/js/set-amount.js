@@ -7,7 +7,7 @@ const setAmount = (total) => {
       const currentCoin = coin(coinValue);
       const amount = currentCoin(total);
       total = total % coinValue;
-      returnObj[`CoinOfValue_${coinValue}`] = amount
+      returnObj[`coinOfValue_${coinValue}`] = amount
     });
     return returnObj;
   }

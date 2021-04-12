@@ -1,6 +1,6 @@
 <div align="center">
 <p align="center">Super Galactic Age Calculator</p>
-</div>
+<r/div>
 <p align="center"> Authored by Brian Sturgis</p>
 <p align="center"> co-authored-by: David Couch </p>
 
