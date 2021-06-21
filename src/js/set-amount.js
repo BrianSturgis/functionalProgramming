@@ -1,4 +1,4 @@
-import coin from './coin.js';
+import countCoins from './countCoins.js';
 
 const AMERICAN_COIN_DENOMINATIONS = [
   {name: 'quarter', value: 25},
@@ -7,14 +7,14 @@ const AMERICAN_COIN_DENOMINATIONS = [
   {name: 'penny', value: 1},
 ];
 
-const getCoins = numberOfCents => { 
+const getCoinStacks = numberOfCents => { 
   const coinStacks = {};
   AMERICAN_COIN_DENOMINATIONS.forEach(COIN => {
-    const currentCoin = coin(COIN.value);
+    const currentCoin = countCoins(COIN.value);
     const amount = currentCoin(numberOfCents);
     numberOfCents = numberOfCents % COIN.value;
     coinStacks[COIN.name] = amount;
   });
   return coinStacks;
 };
-export default getCoins;
+export default getCoinStacks;
