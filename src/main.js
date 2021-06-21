@@ -2,8 +2,8 @@
 import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/styles.css';
-import setAmount from './js/set-amount.js';
+import './styles/styles.scss';
+import getCoins from './js/set-amount.js';
 
 $;
 
@@ -17,9 +17,9 @@ $;
   // const myObj = {f: (quarters) => (dime) => (nickels) => (pennies) => {return `Quarter Worth: ${quarters}`}}
 
 
-  const threeHundredNFifteen = setAmount(315);
+  const threeHundredNFifteen = getCoins(240000);
 
-  console.log(threeHundredNFifteen());
+  console.log(threeHundredNFifteen);
 
 // })()
 
