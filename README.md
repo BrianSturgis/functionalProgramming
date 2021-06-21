@@ -20,11 +20,8 @@ If you use Jest to run your tests, open your terminal and go to the root of the 
 If you would like to run the program through the server, you can type "npm run start" which will build the program and launch the preview to the local server.
 
 ## The projects objectives were to complete the following (MVP)
-- Business logic has 100% line coverage with Jest.
-- Each spec was committed before writing its corresponding code.
-- Project utilizes ES6 features including classes and template literals.
-- Dependencies are managed with npm.
-- Webpack is used to lint, bundle, and process code.
+- to write recursive functions
+
 
 
 
@@ -40,17 +37,12 @@ none as of yet but don't fret as there will be.
 
 
 ## GIT HUB PAGES LINK
-- (https://briansturgis.github.io/JanWeek5Project/)
-
-
-## SPECS
-```JS
+- (https://github.com/BrianSturgis/functionalProgramming.git
 
 // create an Object to hold all relevant key values
 Test: "should create an instance of Calculator"
 code:calculatorObject();
 Expect:(calculatorObject).toEqual(inputtedAge,0,0);
-
 
 
 ```

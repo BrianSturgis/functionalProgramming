@@ -11,6 +11,7 @@ const coin = (value, totalCoins = 0) => {
       totalCoins++;
       return coin(value, totalCoins)(acum)
     }
+
   }
 
 }
