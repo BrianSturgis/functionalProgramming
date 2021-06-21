@@ -1,5 +1,6 @@
 import coin from '../src/js/coin.js';
 
+
 describe('coin', () => {
   it('returns the amount of quarters', () => {
     const quarter = coin(25);
