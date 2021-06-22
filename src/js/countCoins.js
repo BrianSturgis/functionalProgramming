@@ -6,19 +6,25 @@ export const trampoline =
       return result;
     };
 
-const countCoins = (value, totalCoins = 0) => {
+const number = false ? 3 : 0;
 
-  return (acum) => {
+const favoriteNumber = (() => {
+  if (true) {
+    return 3;
+  } else {
+    return 0;
+  }
+})();
 
-    if (acum < value) return totalCoins;
+const nthTriangleNumber = (n, sum = 0) =>
+  n ? () => nthTriangleNumber(n - 1, sum + n)
+    : sum;
 
-    if(acum >= value) {
-      acum -= value;
-      totalCoins++;
-      return countCoins(value, totalCoins)(acum);
-    }
+const countCoins = (valueOfCoin, totalCoins = 0) => 
+  centsRemaining => 
+    centsRemaining < valueOfCoin 
+      ? totalCoins
+      : () => countCoins(valueOfCoin, totalCoins++)(centsRemaining - valueOfCoin);
+  
 
-  };
-
-};
 export default countCoins;

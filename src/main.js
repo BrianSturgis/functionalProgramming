@@ -23,8 +23,7 @@ $;
   console.log(threeHundredNFifteen);
 
   const nthTriangleNumber = (n, sum = 0) =>
-    number !== 0
-      ? () => nthTriangleNumber(n - 1, sum + n) 
+    n ? () => nthTriangleNumber(n - 1, sum + n) 
       : sum;
 
   console.log(trampoline(nthTriangleNumber(5))())
@@ -38,11 +37,9 @@ $;
     .
 */
 
-
-
-const nthTriangleNumber = (n, sum = 0) =>
+const nthTriangleNumber = (10, sum = 0) =>
   number !== 0
-    ? () => nthTriangleNumber(n - 1, sum + n) 
+    ? () => nthTriangleNumber(10 - 1, 0 + 10) (9, 10)
     : sum;
 
 console.log(trampoline(nthTriangleNumber(5))())

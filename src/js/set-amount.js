@@ -10,8 +10,8 @@ const AMERICAN_COIN_DENOMINATIONS = [
 const getCoinStacks = numberOfCents => { 
   const coinStacks = {};
   AMERICAN_COIN_DENOMINATIONS.forEach(COIN => {
-    const currentCoin = countCoins(COIN.value);
-    const amount = currentCoin(numberOfCents);
+    const getStackOfCertainCoin = countCoins(COIN.value);
+    const amount = getStackOfCertainCoin(numberOfCents);
     numberOfCents = numberOfCents % COIN.value;
     coinStacks[COIN.name] = amount;
   });
